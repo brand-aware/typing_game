@@ -23,7 +23,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import balogging.BALoggerUtil;
 import highscores.HighScores;
 import highscores.IBoardOutline;
 import highscores.hsProperties;
@@ -43,7 +42,6 @@ public class TypingScreen extends Actions implements IBoardOutline{
 	public TypingScreen(Properties props){
 		properties = props;
 		properties.setTypingScreen(this);
-		balogger = new BALoggerUtil(properties.getRoot(), "typinggame");
 		typingScreen = new JFrame("typing_game");
 		
 	}

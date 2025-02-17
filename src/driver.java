@@ -11,12 +11,8 @@ import core.TypingScreen;
 public class driver {
 
 	public static void main(String[] args) {
-		if(args.length < 1) {
-			System.out.println("Error format: java driver <root dir>");
-			System.exit(0);
-		}
-		
-		Properties properties = new Properties(args[0]);
+		String currentDir = System.getProperty("user.dir");
+		Properties properties = new Properties(currentDir);
 		TypingScreen screen = new TypingScreen(properties);
 		screen.init();
 		Mover mover = new Mover(screen);
