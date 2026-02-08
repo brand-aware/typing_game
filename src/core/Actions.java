@@ -54,7 +54,6 @@ public class Actions extends CommonScreen {
 	
 	protected void doStart() {
 		//doStop();
-		balogger.startTimer();
 		lastTime = System.currentTimeMillis();
 		time.setText("0");
 		streak.setText("0");
@@ -72,8 +71,6 @@ public class Actions extends CommonScreen {
 	}
 	
 	protected void doStop(String name, String score) throws IOException {
-		balogger.stopTimer();
-		balogger.logScore(name, score);
 		terminal.setEditable(false);
 		started = false;
 		time.setText("--");

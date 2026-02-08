@@ -17,13 +17,11 @@ import javax.swing.JMenuItem;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import balogging.BALoggerUtil;
 import highscores.NameInput;
 
 public class CommonScreen extends ConfigTypingScreen{
 	
 	protected Properties properties;
-	protected BALoggerUtil balogger;
 	
 	protected JFrame typingScreen;
 	protected JDesktopPane desktopPane;
