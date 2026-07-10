@@ -6,39 +6,39 @@ package core;
  * ??? - 2019
  * 
  */
-import java.io.File;
+import java.net.URL;
 
 public class Properties {
 	
 	private String root;
-	private String logo;
-	private String company;
-	private String background;
-	private String iframe;
+	private URL logo;
+	private URL company;
+	private URL background;
+	private URL iframe;
 	
 	private TypingScreen typingScreen;
 	
 	public Properties(String rootDir) {
 		root = rootDir;
-		logo = root + File.separator + "img" + File.separator + "logo.png";
-		company = root + File.separator + "img" + File.separator + "company.png";
-		background = root + File.separator + "img" + File.separator + "background.png";
-		iframe = root + File.separator + "img" + File.separator + "company_iframe.png";
+		logo = getClass().getResource("/img/logo.png");
+		company = getClass().getResource("/img/company.png");
+		background = getClass().getResource("/img/background.png");
+		iframe = getClass().getResource("/img/company_iframe.png");
 	}
 	
 	public String getRoot() {
 		return root;
 	}
-	public String getLogo() {
+	public URL getLogo() {
 		return logo;
 	}
-	public String getCompany() {
+	public URL getCompany() {
 		return company;
 	}
-	public String getBackground() {
+	public URL getBackground() {
 		return background;
 	}
-	public String getIframe() {
+	public URL getIframe() {
 		return iframe;
 	}
 	

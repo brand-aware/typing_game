@@ -327,4 +327,14 @@ public class TypingScreen extends Actions implements IBoardOutline{
 		}	
 		
 	}
+	
+	@Override
+	public int getFrameHeight() {
+		return HEIGHT;
+	}
+
+	@Override
+	public int getFrameWidth() {
+		return WIDTH;
+	}
 }

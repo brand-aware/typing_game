@@ -19,7 +19,7 @@ public class Actions extends CommonScreen {
 		int finalScore = calcScore(finalTime);
 		doStop("", "" + finalScore);
 		try {
-			nameInput = new NameInput(properties.getRoot(), properties.getTypingScreen());
+			nameInput = new NameInput(properties.getRoot(), properties.getTypingScreen(), "typing_game", "");
 			nameInput.setDescending();
 			desktopPane.add(nameInput);
 			desktopPane.moveToFront(nameInput);
